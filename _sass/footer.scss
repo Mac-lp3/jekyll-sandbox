@@ -1,0 +1,20 @@
+.flex-footer {
+	background: $nav-color;
+}
+
+.footer-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer-wrapper > p {
+	margin: 0;
+	display: block;
+	color: white;
+	padding: 10px;
+}
+
+.footer-wrapper > p:first-child {
+	margin-right: auto;
+	align-self: flex-start;
+}
