@@ -6,6 +6,11 @@
 	justify-content: flex-end;
 }
 
+.navigation > li:first-child {
+	margin-right: auto;
+	align-self: flex-start;
+}
+
 .navigation a {
 	text-decoration: none;
 	display: block;
