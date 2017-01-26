@@ -1,0 +1,26 @@
+---
+title: CSV Data
+layout: data
+---
+
+<h2>Customer data read as CSV</h2>
+
+<table>
+	
+	<tr>
+		<th>Title</th>
+		<th>First</th>
+		<th>Last</th>
+		<th>Joined Date</th>
+	</tr>
+
+	{% for record in site.data.customers_csv %}
+		<tr>
+			<td>{{ record.title }}</td>
+			<td>{{ record.firstname }}</td>
+			<td>{{ record.lastname }}</td>
+			<td>{{ record.created }}</td>
+		</tr>
+	{% endfor %}
+
+</table>
