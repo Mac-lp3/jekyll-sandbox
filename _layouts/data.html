@@ -3,9 +3,37 @@ layout: default
 ---
 
 <div>
-	
+
 	<h1>{{ page.title }}</h1>
 
-	{{ content }}
+	<h2>{{ page.lead }}</h2>
+
+	{% if page.title contains "Json" %}
+		{% assign data = site.data.customers_json %}
+	{% endif %}
+
+	{% if page.title contains "CSV" %}
+		{% assign data = site.data.customers_csv %}
+	{% endif %}
+
+	<table>
+	
+		<tr>
+			<th>Title</th>
+			<th>First</th>
+			<th>Last</th>
+			<th>Joined Date</th>
+		</tr>
+
+		{% for record in data %}
+			<tr>
+				<td>{{ record.title }}</td>
+				<td>{{ record.firstname }}</td>
+				<td>{{ record.lastname }}</td>
+				<td>{{ record.created }}</td>
+			</tr>
+		{% endfor %}
+
+	</table>
 
 </div>

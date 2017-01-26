@@ -1,26 +1,5 @@
 ---
 title: Json Data
+lead: Customer data read from a JSON file.
 layout: data
 ---
-
-<h2>Customer data read as JSON</h2>
-
-<table>
-	
-	<tr>
-		<th>Title</th>
-		<th>First</th>
-		<th>Last</th>
-		<th>Joined Date</th>
-	</tr>
-
-	{% for record in site.data.customers_json %}
-		<tr>
-			<td>{{ record.title }}</td>
-			<td>{{ record.firstname }}</td>
-			<td>{{ record.lastname }}</td>
-			<td>{{ record.created }}</td>
-		</tr>
-	{% endfor %}
-
-</table>
