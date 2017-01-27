@@ -1,7 +1,7 @@
 .navigation {
 	list-style: none;
 	margin: 0;
-	background: grey;
+	background: $nav-color;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -15,7 +15,7 @@
 	text-decoration: none;
 	display: block;
 	color: white;
-	padding: 1em;
+	padding: 10px;
 }
 
 .navigation a:hover {
