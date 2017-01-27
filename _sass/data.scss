@@ -1,0 +1,19 @@
+.flex-table {
+	border-collapse: collapse;
+	width: 100%;
+	font-weight: 200;
+	text-align: left;
+}
+
+.flex-table th {
+	background: black;
+	color: white;
+}
+
+.flex-table td, th {
+	padding: 0.5rem;
+}
+
+.flex-table tr:nth-child(odd):not(:first-child) {
+	background: $nav-color;
+}
