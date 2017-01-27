@@ -5,6 +5,7 @@
 .footer-wrapper {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 }
 
 .footer-wrapper > p {
@@ -12,6 +13,11 @@
 	display: block;
 	color: white;
 	padding: 10px;
+}
+
+.footer-wrapper > p a{
+	color: white;
+	text-decoration: none;
 }
 
 .footer-wrapper > p:first-child {
